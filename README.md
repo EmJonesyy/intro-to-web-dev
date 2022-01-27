@@ -1,6 +1,6 @@
 # Intro to Web Development
 
-This repository contains the homework assignments for Introduction to Web Development.
+This repository contains Emily Jones's homework assignments for Introduction to Web Development.
 
 Class homepage: https://happycoding.io/teaching/intro-to-web-dev
 
