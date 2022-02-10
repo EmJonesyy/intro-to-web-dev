@@ -1,12 +1,35 @@
-nav {
-  border: thin solid black;
-}
-
-div {
-  border: thin solid black;
-  margin: 25px 0;
-}
-
-footer {
-  border: thin solid black;
-}
+<style>
+    body {
+      background-color: white;
+     	 }
+      h1 {
+        color: red; 
+	text-align: center;
+        font-size: 50px;
+	 font-weight: bold;
+	  }
+	h2 {
+        color: red; 
+	text-align: center;
+        font-size: 40px;
+	 font-weight: bold;
+	  }   
+	   h3 {
+        color: red; 
+	text-align: center;
+        font-size: 35px;
+	 font-weight: bold;
+	  }   
+     p { 
+        color: red;
+	 text-align: center;
+        font-size: 30px;
+ 	 max-width: 120px;
+	}
+	   .container {
+ 	 display: flex;
+  	align-items: center;
+   	 gap: 20px;
+	   }
+       
+ </style>
