@@ -8,10 +8,30 @@ function fillOutputs() {
   // Get the text from the input element
   const adjectiveOne = adjectiveOneInput.value;
 
-  // Get the adjective output element
-  const adjectiveOneOutput = document.getElementById('adjective-one-output');
+  // Get the adjective input element
+  const adjectiveOneInput = document.getElementById('adjective-one-input');
+  // Get the text from the input element
+  const adjectiveOne = adjectiveOneInput.value;
+  
+    // Get the noun input element
+  const nounOneInput = document.getElementById('noun-one-input');
+  // Get the text from the input element
+  const nounOne = nounOneInput.value;
+  
+ // Get the noun output element
+  const nounOneOutput = document.getElementById('noun-one-output');
   // Set the text of the input element
-  adjectiveOneOutput.innerText = adjectiveOne;
+  nounOneOutput.innerText = nounOne;
+  
+    // Get the verb input element
+  const verbOneInput = document.getElementById('verb-one-input');
+  // Get the text from the input element
+  const verbOne = verbOneInput.value;
+  
+    // Get the verb input element
+  const verbOneInput = document.getElementById('verb-one-input');
+  // Get the text from the input element
+  const verbOne = verbOneInput.value;
 
   // Get the output container element
   const outputDiv = document.getElementById('output');
