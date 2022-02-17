@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
+    <title>Mad Lib Fun!</title>
+      <style>
+    body {
+      background-color: yellow;
+     	 }
+    </style>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="inputs">
+      <div>Give me a noun: <input id="noun-one-input" /></div>
+      <button onclick="fillOutputs();">Done</button>
+    </div>
+    <div id="output">
+      The <span id="noun-one-output"></span> was shinning on a beautiful day.
+    </div>
+    <div id="inputs">
       <div>Give me an adjective: <input id="adjective-one-input" /></div>
       <button onclick="fillOutputs();">Done</button>
     </div>
     <div id="output">
-      The <span id="adjective-one-output"></span> fox jumped over the lazy dog.
+      The <span id="adjective-one-output"></span> dog wanted to go outside.
+    </div>
+    <div id="inputs">
+      <div>Give me an adjective: <input id="adjective-one-input" /></div>
+      <button onclick="fillOutputs();">Done</button>
+    </div>
+    <div id="output">
+      The <span id="adjective-one-output"></span> owner opened the door to let the dog out.
+    </div>
+    <div id="inputs">
+      <div>Give me a verb: <input id="verb-one-input" /></div>
+      <button onclick="fillOutputs();">Done</button>
+    </div>
+    <div id="output">
+      The dog <span id="verb-one-output"></span> so fast his owner could not catch him. 
+    </div>
+    <div id="inputs">
+      <div>Give me a noun: <input id="noun-one-input" /></div>
+      <button onclick="fillOutputs();">Done</button>
+    </div>
+    <div id="output">
+      The owner needed to give the dog a <span id="noun-one-output"></span> in order for him to come home.
+    </div>
+    <div id="inputs">
+      <div>Give me an adjective: <input id="adjective-one-input" /></div>
+      <button onclick="fillOutputs();">Done</button>
+    </div>
+    <div id="output">
+      The dog enjoyed his treat and layed in the <span id="adjective-one-output"></span> sun. 
     </div>
   </body>
 </html>
