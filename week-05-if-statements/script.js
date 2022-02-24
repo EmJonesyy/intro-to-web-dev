@@ -47,7 +47,7 @@ function submitAnswerThree() {
     alert("That's right!");
     hide('question-three');
     show('question-four');
-  } else if(answerThree == 'john') {
+  } else if(answerThree == 'Ray') {
     alert('my boyfriend's name starts with an R.');
   }
 }
@@ -83,7 +83,7 @@ function submitAnswerFive() {
     alert("That's right!");
     hide('question-five');
     show('question-six');
-  } else if(answerFive == 'Bud') {
+  } else if(answerFive == 'Buddy') {
     alert('Close, but it's a longer name.');
   } else {
     alert('Wrong! Hint: Ends with a y.')
@@ -95,7 +95,7 @@ function submitAnswerFive() {
 function submitAnswerSix() {
   // Get answer six's input element
   const answerSixInput = document.getElementById('answer-six-input');
-  // Get the number from answer sixth's input element
+  // Get the number from answer six's input element
   const answerSix = answerSixInput.value;
 
   if(answerSix == 6) {
@@ -108,7 +108,78 @@ function submitAnswerSix() {
     alert('The answer is lower.')
   }
 }
+// When this function is called, it takes the user's answer to the seventh
+// question and uses if statements to check whether it's correct.
+function submitAnswerSeven() {
+  // Get answer seven's input element
+  const answerSevenInput = document.getElementById('answer-seven-input');
+  // Get the text from answer seven's input element
+  const answerSeven = answerSevenInput.value;
 
+  if(answerSeven == 'Iceland') {
+    alert("That's right!");
+    hide('question-seven');
+    show('question-eight');
+  } else if(answerSeven == 'Iceland') {
+    alert('Close, but my favorite country starts with Ice.');
+  } else {
+    alert('Wrong! Hint: My favorite country is where my grandmother is from.')
+  }
+}
+// When this function is called, it takes the user's answer to the eighth
+// question and uses if statements to check whether it's correct.
+function submitAnswerEight() {
+  // Get answer eight's input element
+  const answerEightInput = document.getElementById('answer-eight-input');
+  // Get the text from answer eight's input element
+  const answerEight = answerEightInput.value;
+
+  if(answerEight == 'Sour Patch Kids') {
+    alert("That's right!");
+    hide('question-eight');
+    show('question-nine');
+  } else if(answerEight == 'Sour Patch Kids') {
+    alert(' my favorite candy starts with an S.');
+  } else {
+    alert('Wrong! Hint: My favorite candy is sour.')
+  }
+}
+// When this function is called, it takes the user's answer to the ninth
+// question and uses if statements to check whether it's correct.
+function submitAnswerNine() {
+  // Get answer nine's input element
+  const answerNineInput = document.getElementById('answer-nine-input');
+  // Get the number from answer nine's input element
+  const answerNine = answerNineInput.value;
+
+  if(answerNine == 2018) {
+    alert("That's right!");
+    hide('question-nine');
+    show('done');
+  } else if(answerNine < 2018) {
+    alert('The answer is higher.');
+  } else {
+    alert('The answer is lower.')
+  }
+}
+// When this function is called, it takes the user's answer to the tenth
+// question and uses if statements to check whether it's correct.
+function submitAnswerTen() {
+  // Get answer ten's input element
+  const answerTenInput = document.getElementById('answer-ten-input');
+  // Get the text from answer ten's input element
+  const answerTen = answerTenInput.value;
+
+  if(answerTen == 'Public Relations') {
+    alert("That's right!");
+    hide('question-ten');
+    show('question-ten');
+  } else if(answerTen == 'Public Realtions') {
+    alert('Close, but my major starts with a P.');
+  } else {
+    alert('Wrong! Hint: My major falls in the Communications category.')
+  }
+}
 // Helper function that takes an ID and shows the element with that ID.
 function show(id) {
   const element = document.getElementById(id);
