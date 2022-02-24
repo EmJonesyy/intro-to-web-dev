@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <style>
+    body {
+      background-color: pink;
+     	 }
+    </style>
+    <h1> Welcome to Emily's Quiz!</h1> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Quiz</h1>
 
+    <div id="question-one">
+      <h2>What's my favorite color?</h2>
+      <input id="answer-one-input" />
+      <button onclick="submitAnswerOne();">Done</button>
+    </div>
+
+    <div id="question-two">
+      <h2>How old am I?</h2>
+      <input id="answer-two-input" type="number" />
+      <button onclick="submitAnswerTwo();">Done</button>
+    </div>
+    
+  <div id="question-three">
+      <h2>What is my boyfriend's name?</h2>
+      <input id="answer-three-input" />
+      <button onclick="submitAnswerThree();">Done</button>
+    </div>
+    
+     <div id="question-four">
+      <h2>What year was I born?</h2>
+      <input id="answer-four-input" type="number" />
+      <button onclick="submitAnswerFour();">Done</button>
+    </div>
+    
+     <div id="question-five">
+      <h2>What's my dogs name?</h2>
+      <input id="answer-five-input" />
+      <button onclick="submitAnswerFive();">Done</button>
+    </div>
+    
+       <div id="question-six">
+      <h2>How many years have my boyfriend and I been together?</h2>
+      <input id="answer-six-input" type="number" />
+      <button onclick="submitAnswerSix();">Done</button>
+    </div>
+    
+     <div id="question-seven">
+      <h2>What has been my favorite country that I have visited?</h2>
+      <input id="answer-seven-input" />
+      <button onclick="submitAnswerSeven();">Done</button>
+    </div>
+    
+     <div id="question-eight">
+      <h2>What's my favorite candy?</h2>
+      <input id="answer-eight-input" />
+      <button onclick="submitAnswerEight();">Done</button>
+    </div>
+    
+     <div id="question-nine">
+      <h2>What year did I graduate high school?</h2>
+      <input id="answer-nine-input" type="number" />
+      <button onclick="submitAnswerNine();">Done</button>
+    </div>
+    
+       <div id="question-ten">
+      <h2>What's my major?</h2>
+      <input id="answer-ten-input" />
+      <button onclick="submitAnswerTen();">Done</button>
+    </div>
+
+    
+    <div id="done">
+      <p>Thanks for taking my quiz!</p>
+    </div>
+
+  </body>
+</html>
