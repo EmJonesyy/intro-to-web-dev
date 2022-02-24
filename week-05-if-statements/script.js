@@ -6,14 +6,14 @@ function submitAnswerOne() {
   // Get the text from answer one's input element
   const answerOne = answerOneInput.value;
 
-  if(answerOne == 'cat') {
+  if(answerOne == 'blue') {
     alert("That's right!");
     hide('question-one');
     show('question-two');
-  } else if(answerOne == 'dog') {
-    alert('Close, but my favorite animal runs away from dogs.');
+  } else if(answerOne == 'blue') {
+    alert('Close, but my favorite color starts with a B.');
   } else {
-    alert('Wrong! Hint: My favorite animal meows.')
+    alert('Wrong! Hint: My favorite color is the same as my eyes.')
   }
 }
 
