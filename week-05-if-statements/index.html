@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Quiz</title>
+    <style>
+    body {
+      background-color: pink;
+     	 }
+    </style>
+    <h1> Welcome to Emily's Quiz!</h1> 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
   </head>
@@ -9,19 +15,31 @@
     <h1>Quiz</h1>
 
     <div id="question-one">
-      <h2>What's my favorite animal?</h2>
+      <h2>What's my favorite color?</h2>
       <input id="answer-one-input" />
       <button onclick="submitAnswerOne();">Done</button>
     </div>
 
     <div id="question-two">
-      <h2>What's the answer to life, the universe, and everything?</h2>
+      <h2>How old am I?</h2>
       <input id="answer-two-input" type="number" />
       <button onclick="submitAnswerTwo();">Done</button>
     </div>
-
+    
+  <div id="question-three">
+      <h2>What is my boyfriend's name?</h2>
+      <input id="answer-three-input" />
+      <button onclick="submitAnswerThree();">Done</button>
+    </div>
+    
+     <div id="question-four">
+      <h2>What year was I born?</h2>
+      <input id="answer-four-input" type="number" />
+      <button onclick="submitAnswerFour();">Done</button>
+    </div>
+    
     <div id="done">
-      <p>Thank you for taking my quiz!</p>
+      <p>Thanks for taking my quiz!</p>
     </div>
 
   </body>
