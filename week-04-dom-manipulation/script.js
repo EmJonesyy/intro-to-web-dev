@@ -8,10 +8,7 @@ function fillOutputs() {
   // Get the text from the input element
   const adjectiveOne = adjectiveOneInput.value;
 
-  // Get the adjective output element
-  const adjectiveOneOutput = document.getElementById('adjective-one-output');
-  // Get the text from the input element
-  const adjectiveOne = adjectiveOneOutput.value;
+
   
   // Get the adjective input element
   const adjectiveTwoInput = document.getElementById('adjective-two-input');
