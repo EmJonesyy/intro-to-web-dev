@@ -8,7 +8,10 @@ function fillOutputs() {
   // Get the text from the input element
   const adjectiveOne = adjectiveOneInput.value;
 
-
+  // Get the adjective output element
+  const adjectiveOneOutput = document.getElementById('adjective-One-output');
+  // Get the text from the input element
+  const adjectiveOneOutput.innerText=adjectiveOne;
   
   // Get the adjective input element
   const adjectiveTwoInput = document.getElementById('adjective-two-input');
@@ -18,7 +21,7 @@ function fillOutputs() {
   // Get the adjective output element
   const adjectiveTwoOutput = document.getElementById('adjective-Two-output');
   // Get the text from the input element
-  const adjectiveTwo = adjectiveTwoOutput.value;
+  const adjectiveTwoOutput.innerText=adjectiveTwo;
   
   // Get the adjective input element
   const adjectiveThreeInput = document.getElementById('adjective-three-input');
@@ -28,7 +31,7 @@ function fillOutputs() {
   // Get the adjective output element
   const adjectiveThreeOutput = document.getElementById('adjective-three-output');
   // Get the text from the input element
-  const adjectiveThree = adjectiveThreeOutput.value;
+  const adjectiveThreeOutput.innerText = adjectiveThree;
   
     // Get the noun input element
   const nounOneInput = document.getElementById('noun-one-input');
@@ -48,7 +51,7 @@ function fillOutputs() {
     // Get the verb output element
   const verbOneOutput = document.getElementById('verb-one-output');
   // Get the text from the input element
-  const verbOne = verbOneOutput.value;
+  const verbOneOutput.innerText = verbOne;
 
   // Get the output container element
   const outputDiv = document.getElementById('output');
