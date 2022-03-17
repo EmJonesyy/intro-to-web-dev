@@ -28,10 +28,10 @@ function fillOutputs() {
   // Get the text from the input element
   const verbOne = verbOneInput.value;
   
-    // Get the verb input element
-  const verbOneInput = document.getElementById('verb-one-input');
+    // Get the verb output element
+  const verbOneOutput = document.getElementById('verb-one-output');
   // Get the text from the input element
-  const verbOne = verbOneInput.value;
+  const verbOne = verbOneOutput.value;
 
   // Get the output container element
   const outputDiv = document.getElementById('output');
