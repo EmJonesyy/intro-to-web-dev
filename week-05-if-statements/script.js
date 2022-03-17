@@ -84,7 +84,7 @@ function submitAnswerFive() {
     hide('question-five');
     show('question-six');
   } else if(answerFive == 'Buddy') {
-    alert('Close, but it's a longer name.');
+    alert('Close, but it's a longer name.');)
   } else {
     alert('Wrong! Hint: Ends with a y.')
   }
