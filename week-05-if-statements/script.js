@@ -48,7 +48,7 @@ function submitAnswerThree() {
     hide('question-three');
     show('question-four');
   } else if(answerThree == 'Ray') {
-    alert("my boyfriend's name starts with an R.");
+    alert("my boyfriend's name starts with an R");
   }
 }
 
