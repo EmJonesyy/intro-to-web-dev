@@ -8,7 +8,7 @@ createCanvas (500, 600);
 
 function draw() {
  background (225);
-  
+ 
   textSize (25);
   text(message, 160, textY);
   
