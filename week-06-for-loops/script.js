@@ -44,15 +44,81 @@ function displayshortWords() {
       shortWordsElement.appendChild(wordElement); 
     }
   }
-    
+  
+  // Displays words that start with an E.
+function displayEWords() {
+  const EWordsElement = document.getElementById('E-words');
+
+  // Loop over every word in the array.
+  for(let i = 0; i < wordsArray.length; i++) {
+    const word = wordsArray[i];
+    // If the word starts with an E, display it in the page.
+    if(word.E) {
+      const wordElement = document.createElement('li');
+      wordElement.innerText = word;
+      EWordsElement.appendChild(wordElement);
+    }
+  }
+  
+  // Display the longest word.
+function displayLongestWord() {
+  const longestWordElement = document.getElementById('longest-word');
+
+  // Loop over every word in the array.
+  for(let i = 0; i < wordsArray.length; i++) {
+    const word = wordsArray[i];
+    // If the word is the longest word, display it in the page.
+    if(word. longest) {
+      const wordElement = document.createElement('li');
+      wordElement.innerText = word;
+      longestWordElement.appendChild(wordElement);
+    }
+  }
+  
+  // Display every third word.
+function displayThirdWords() {
+  const ThirdWordsElement = document.getElementById('third-words');
+
+  // Loop over every third word in the array.
+  for(let i = 0; i < wordsArray.length; i++) {
+    const word = wordsArray[i];
+    // If the word is every third word, display it in the page.
+    if(word. third) {
+      const wordElement = document.createElement('li');
+      wordElement.innerText = word;
+      ThirdWordsElement.appendChild(wordElement);
+    }
+  }
+  // Displays words that are not the, and, I, but, of, are, a, am, you, my.
+function displayNonCommonWords() {
+  const noncommonwordsElement = document.getElementById('noncommon-words');
+
+  // Loop over every word in the array.
+  for(let i = 0; i < wordsArray.length; i++) {
+    const word = wordsArray[i];
+    // If the word is anything except the, and, I, but, are, a, am, you, my, display it in the page.
+    if(word. noncommon words) {
+      const wordElement = document.createElement('li');
+      wordElement.innerText = word;
+      NonCommonWordsElement.appendChild(wordElement);
+    }
+  }
 }
 
-// TODO: Define your own functions here!
 
 function displaySpeechStats() {
   document.getElementById('speech').innerText = speech;
 
   displayLongWords();
 
-  // TODO: Call your functions here!
+  displayShortWords();
+  
+   displayEWords();
+  
+   displayLongestWords();
+  
+   displayThirdWords();
+  
+   displayNonCommonWords();
+  
 }
