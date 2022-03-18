@@ -94,7 +94,7 @@ function displayThirdWords() {
 function displayNonCommonWords() {
   const noncommonwordsElement = document.getElementById('noncommon-words');
 
-  // Loop over every word in the array.
+  // Loop over every noncommon word in the array.
   for(let i = 0; i < wordsArray.length; i++) {
     const word = wordsArray[i];
     // If the word is anything except the, and, I, but, are, a, am, you, my, display it in the page.
