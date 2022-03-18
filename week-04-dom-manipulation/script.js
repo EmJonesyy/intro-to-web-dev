@@ -6,12 +6,12 @@ function fillOutputs() {
   // Get the adjective input element
   const adjectiveOneInput = document.getElementById('adjective-one-input');
   // Get the text from the input element
-  const adjectiveOne = adjectiveOneInput.value;
+   adjectiveOne = adjectiveOneInput.value;
 
   // Get the adjective output element
   const adjectiveOneOutput = document.getElementById('adjective-one-output');
   // Get the text from the input element
-  const adjectiveOneOutput.innerText = adjectiveOne;
+   adjectiveOneOutput.innerText = adjectiveOne;
   
   // Get the adjective input element
   const adjectiveTwoInput = document.getElementById('adjective-two-input');
