@@ -43,6 +43,16 @@ function fillOutputs() {
   // Set the text of the input element
   nounOneOutput.innerText = nounOne;
   
+    // Get the noun input element
+  const nounTwoInput = document.getElementById('noun-two-input');
+  // Get the text from the input element
+  const nounTwo = nounTwoInput.value;
+  
+ // Get the noun output element
+  const nounTwoOutput = document.getElementById('noun-two-output');
+  // Set the text of the input element
+  nounTwoOutput.innerText = nounTwo;
+  
     // Get the verb input element
   const verbOneInput = document.getElementById('verb-one-input');
   // Get the text from the input element
