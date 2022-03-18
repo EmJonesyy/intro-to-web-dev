@@ -19,9 +19,9 @@ function fillOutputs() {
   const adjectiveTwo = adjectiveTwoInput.value;
 
   // Get the adjective output element
-  const adjectiveTwoOutput = document.getElementById('adjective-Two-output');
+  const adjectiveTwoOutput = document.getElementById('adjective-two-output');
   // Get the text from the input element
-  const adjectiveTwoOutput.innerText=adjectiveTwo;
+  const adjectiveTwo = adjectiveTwoOutput.value;
   
   // Get the adjective input element
   const adjectiveThreeInput = document.getElementById('adjective-three-input');
@@ -31,7 +31,7 @@ function fillOutputs() {
   // Get the adjective output element
   const adjectiveThreeOutput = document.getElementById('adjective-three-output');
   // Get the text from the input element
-  const adjectiveThreeOutput.innerText = adjectiveThree;
+  const adjectiveThree = adjectiveThreeOutput.value;
   
     // Get the noun input element
   const nounOneInput = document.getElementById('noun-one-input');
