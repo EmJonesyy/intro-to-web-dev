@@ -11,7 +11,7 @@ function fillOutputs() {
   // Get the adjective output element
   const adjectiveOneOutput = document.getElementById('adjective-One-output');
   // Get the text from the input element
-  const adjectiveOneOutput.innerText=adjectiveOne;
+  const adjectiveOne = adjectiveOneInput.value;
   
   // Get the adjective input element
   const adjectiveTwoInput = document.getElementById('adjective-two-input');
@@ -57,4 +57,4 @@ function fillOutputs() {
   const outputDiv = document.getElementById('output');
   // Make the output container element visible
   outputDiv.style.display = 'block';
-}
+     }
