@@ -1,9 +1,9 @@
-// Array of objects representing a todo list.
+// Array of objects representing a favoritefoods list.
 // Modify this array to contain your own list.
-const taskArray = [
-  {label: 'Water plants', time: 3},
-  {label: 'Homework', time: 2},
-  {label: 'Laundry', time: 1},
+const foodArray = [
+  {food: 'Fettuccine Alfredo', number: 1},
+  {food: 'Burgers', number: 2},
+  {food: 'Salad', number: 3},
 ];
 
 // Loads the content into the page.
@@ -17,11 +17,11 @@ function loadContent() {
 }
 
 // Adds a task to the array and reloads the page content.
-function addNewTask() {
-  const newTaskLabel = document.getElementById('label-input').value;
-  const newTaskTime = document.getElementById('time-input').value;
-  const newTask = {label: newTaskLabel, time: newTaskTime };
-  taskArray.push(newTask);
+function addNewFood() {
+  const newFoodLabel = document.getElementById('food-input').value;
+  const newFoodNumber = document.getElementById('number-input').value;
+  const newFood = {food: newFoodNumber, number: newFoodNumber };
+  taskArray.push(newFood);
 
   loadContent();
 }
@@ -33,8 +33,8 @@ function loadTable() {
   // Create a header row.
   const headerRowElement = document.createElement('tr');
   headerRowElement.appendChild(createElement('th', 'Index'));
-  headerRowElement.appendChild(createElement('th', 'Label'));
-  headerRowElement.appendChild(createElement('th', 'Time'));
+  headerRowElement.appendChild(createElement('th', 'Food'));
+  headerRowElement.appendChild(createElement('th', 'Number'));
   tableElement.appendChild(headerRowElement);
 
   // Iterate over the array and create a table row for each object.
@@ -42,8 +42,8 @@ function loadTable() {
     const task = taskArray[i];
     const rowElement = document.createElement('tr');
     rowElement.appendChild(createElement('td', i));
-    rowElement.appendChild(createElement('td', task.label));
-    rowElement.appendChild(createElement('td', task.time));
+    rowElement.appendChild(createElement('td', food.food));
+    rowElement.appendChild(createElement('td', food.number));
     tableElement.appendChild(rowElement);
   }
 
@@ -52,20 +52,20 @@ function loadTable() {
   tableContainer.appendChild(tableElement);
 }
 
-// Displays the name of the shortest task.
-function loadShortestTask(){
-  // Assume the first task is shortest
-  let shortestTask = taskArray[0];
+// Displays the name of the shortest food.
+function loadShortestFood(){
+  // Assume the first food is shortest
+  let shortestFood = foodArray[0];
 
-  // Starting with the second task, look for a shorter task
-  for (let i = 1; i < taskArray.length; i++) {
-    const task = taskArray[i];
-    // If this task is shorter than the previous shortest, it's now the shortest
-    if(task.time < shortestTask.time) {
-      shortestTask = task;
+  // Starting with the second food, look for a shorter food
+  for (let i = 1; i < foodArray.length; i++) {
+    const task = foodArray[i];
+    // If this food is shorter than the previous shortest, it's now the shortest
+    if(food.number < shortestFood.time) {
+      shortestFood = food;
     }
   }
-  document.getElementById('shortest-task').innerText = shortestTask.label;
+  document.getElementById('shortest-food').innerText = shortestFood.label;
 }
 
 // Helper function that creates an element that contains text content.
