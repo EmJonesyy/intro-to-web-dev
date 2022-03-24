@@ -16,7 +16,7 @@ function loadContent() {
   loadShortestTask();
 }
 
-// Adds a task to the array and reloads the page content.
+// Adds a food to the array and reloads the page content.
 function addNewFood() {
   const newFoodLabel = document.getElementById('food-input').value;
   const newFoodNumber = document.getElementById('number-input').value;
@@ -38,8 +38,8 @@ function loadTable() {
   tableElement.appendChild(headerRowElement);
 
   // Iterate over the array and create a table row for each object.
-  for (let i = 0; i < taskArray.length; i++) {
-    const task = taskArray[i];
+  for (let i = 0; i < foodArray.length; i++) {
+    const task = foodArray[i];
     const rowElement = document.createElement('tr');
     rowElement.appendChild(createElement('td', i));
     rowElement.appendChild(createElement('td', food.food));
