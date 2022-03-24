@@ -10,7 +10,7 @@ const foodArray = [
 function loadContent() {
   // This line of code sorts the array alphabetically by the task labels.
   // Modify this to sort your data by a different field, or just delete it.
-  taskArray.sort((a, b) => compare(a.label, b.label));
+  foodArray.sort((a, b) => compare(a.label, b.label));
 
   loadTable();
   loadShortestTask();
