@@ -61,7 +61,7 @@ function loadShortestFood(){
   for (let i = 1; i < foodArray.length; i++) {
     const task = foodArray[i];
     // If this food is shorter than the previous shortest, it's now the shortest
-    if(food.number < shortestFood.time) {
+    if(food.number < shortestFood.number) {
       shortestFood = food;
     }
   }
