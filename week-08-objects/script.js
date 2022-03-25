@@ -4,13 +4,20 @@ const foodArray = [
   {food: 'Fettuccine Alfredo', number: 1},
   {food: 'Burgers', number: 2},
   {food: 'Salad', number: 3},
+  {food: 'chicken', number: 4},
+   {food: 'Candy', number: 5},
+    {food: 'Soup', number: 6},
+    {food: 'Chocolate', number: 7},
+    {food: 'Shrimp', number: 8},
+    {food: 'Crab', number: 9},
+    {food: 'Tacos', number: 10},
 ];
 
 // Loads the content into the page.
 function loadContent() {
-  // This line of code sorts the array alphabetically by the task labels.
+  // This line of code sorts the array alphabetically by the food labels.
   // Modify this to sort your data by a different field, or just delete it.
-  foodArray.sort((a, b) => compare(a.label, b.label));
+  foodArray.sort((a, b) => compare(a.food, b.food));
 
   loadTable();
   loadShortestFood();
@@ -18,9 +25,9 @@ function loadContent() {
 
 // Adds a food to the array and reloads the page content.
 function addNewFood() {
-  const newFoodLabel = document.getElementById('food-input').value;
+  const newFood = document.getElementById('food-input').value;
   const newFoodNumber = document.getElementById('number-input').value;
-  const newFood = {food: newFoodNumber, number: newFoodNumber };
+  const newFood = {food: newFood, number: newNumber };
   foodArray.push(newFood);
 
   loadContent();
