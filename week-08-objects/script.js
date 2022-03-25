@@ -49,7 +49,7 @@ function loadTable() {
     const task = foodArray[i];
     const rowElement = document.createElement('tr');
     rowElement.appendChild(createElement('td', i));
-    rowElement.appendChild(createElement('td', food.food));
+    rowElement.appendChild(createElement('td',food.number));
     rowElement.appendChild(createElement('td', food.number));
     tableElement.appendChild(rowElement);
   }
