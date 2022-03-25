@@ -13,7 +13,7 @@ function loadContent() {
   foodArray.sort((a, b) => compare(a.label, b.label));
 
   loadTable();
-  loadShortestTask();
+  loadShortestFood();
 }
 
 // Adds a food to the array and reloads the page content.
@@ -21,7 +21,7 @@ function addNewFood() {
   const newFoodLabel = document.getElementById('food-input').value;
   const newFoodNumber = document.getElementById('number-input').value;
   const newFood = {food: newFoodNumber, number: newFoodNumber };
-  taskArray.push(newFood);
+  foodArray.push(newFood);
 
   loadContent();
 }
