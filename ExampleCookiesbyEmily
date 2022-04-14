@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function loadCookies() {
+        let cookiesEl = document.getElementById('cookies');
+        cookiesEl.innerText = document.cookie;
+
+        let nameCookie = getCookie('name');
+        let nameOutputElement = document.getElementById('name-output');
+        nameOutputElement.innerText = nameCookie;
+      }
+
+      function saveCookies() {
+        let nameInputEl = document.getElementById('name-input');
+        let name = nameInputEl.value;
+        document.cookie = 'name=' + name;
+      }
+
+      function getCookie(cookieName){
+        // cookies start out as semicolon-separated
+        // property-value pairs, so convert that
+        // to an array of property-value pairs
+        let properties = document.cookie.split(';');
+        for(let property of properties) {
+          // Remove any extra whitespace
+          property = property.trim();
+          // Does the property start with the cookie name?
+          if(property.startsWith(cookieName)) {
+            // If so, we found the cookie!
+            let cookieValue = property.split('=')[1];
+            return cookieValue;
+          }
+        }
+        // Couldn't find hte cookie, so return empty
+        return '';
+      }
+    </script>
+  </head>
+  <body onload="loadCookies();">
+    <p>This page lets you save and load a cookie!</p>
+    <p>Enter a name below and then refresh the page!</p>
+
+    <p>Cookies:</p>
+    <p id="cookies"></p>
+
+    <p>Previously entered name:</p>
+    <p id="name-output"></p>
+
+    <p>Enter a new name:</p>
+    <input id="name-input" />
+    <button onclick="saveCookies();">Save</button>
+  </body>
+</html>
