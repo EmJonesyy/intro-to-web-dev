@@ -7,7 +7,7 @@ let movies = [
      knownFor: ['Julia Roberts',
                 'Mystic Pizza']
     },
-    {titleName: 'Legally BLonde',
+    {titleName: 'Legally Blonde',
      locationName: 'California',
      release: {year: 2001,
              month: 'July',
